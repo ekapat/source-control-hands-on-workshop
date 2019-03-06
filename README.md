@@ -79,7 +79,7 @@ Date:   Sun Jan 27 13:20:15 2019 +0700
 ```
 
 ### Modified Files
-*Git does not just track the creation and deletion of files. It also reports the changes that happen to the files that are already present in its history.*
+Git does not just track the creation and deletion of files. It also reports the changes that happen to the files that are already present in its history.
 
 For example the content above is italic by mistake. You can easily fix them by removing `*....*` that is currently surround the content.
 
@@ -87,7 +87,7 @@ After remove them, save the file and run `git status` again.
 
 ![modified-files](https://user-images.githubusercontent.com/4034609/53857226-f3c16f80-4007-11e9-92ae-b364a15beebb.png)
 
-Next, to save this change. You will have to add `README.md` into the staging area and then make a commit. Let's see if you can do it without our help. 
+Next, to save this change. You will have to add `README.md` into the staging area and then make a commit. Let's see if you can do it without our help.
 
 ### Files life cycle summary
 ![file-life-cycle](https://user-images.githubusercontent.com/11821799/51426727-375f4600-1c21-11e9-82f2-f95112e20cd1.png)
@@ -95,7 +95,7 @@ Next, to save this change. You will have to add `README.md` into the staging are
 ## Putting the project on remote server
 Git can work fine on your local machine. However, there are situations that remote server can provide a grater benefits.
 
-2 main drawback of working only on local machine are 
+2 main drawback of working only on local machine are
 * Risk of losing the code.
 * Very difficult to collaborate with teammate.
 
@@ -116,7 +116,7 @@ You can think of a repository as a place on Github's server that is available to
 At this point, you will have a git repository on Github's server ready for storing your local copy. You will see instructions to either create a repository or push an existing repository.
 
 #### 5. Add remote server
-Follow the instructions under a section that says  
+Follow the instructions under a section that says
 "…or push an existing repository from the command line"
 
 For now, execute only the first line.
@@ -133,7 +133,7 @@ Right now if you look at the repository on Github, you will see that it is empty
 ```sh
 git push -u origin master
 ```
-*`-u` in the command link our `master` with the `master` copy on Github server. You only need to use it on the first time that you push new `branch` to the server* 
+*`-u` in the command link our `master` with the `master` copy on Github server. You only need to use it on the first time that you push new `branch` to the server*
 
 (Windows) You might be asked to login after execute the command above. Just enter your Github's username and password.
 
@@ -171,10 +171,10 @@ git checkout -- <file_path>
 # Collaboration
 Up until now, only you have committed changes to the project. In collaborative work as in large software development, there are teams working on the same repository. Git helps us to maintain the synchronized state of the project.
 
-#### Scenario 
+#### Scenario
 1. Go to your repository on Github.
 2. Add CONTRIBUTORS.md from Github's site with the following content `This project is written by Tappasarn A.`
-3. Since you start to collaborate on this project. You also want to update CONTRIBUTORS.md with your own name after the my name. 
+3. Since you start to collaborate on this project. You also want to update CONTRIBUTORS.md with your own name after the my name.
 4. You see that this file is present on Github repository but not on you local machine.
 5. You must sync the project.
 
@@ -244,7 +244,7 @@ Now you will need to help git makes decision on how the file suppose to be like.
 
 After you helped git `resolves` the `conflicts`, if you run `git status` command it will report that the state of `CONTRIBUTORS.md` is now at `modified`.
 
-You would want this file to be on the `staging` area with other files.  
+You would want this file to be on the `staging` area with other files.
 
 Do you Remember the command to make this happen ?
 
